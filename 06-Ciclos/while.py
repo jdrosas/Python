@@ -33,7 +33,7 @@ print("-------------------------------------")
 # EJEMPLO
 print("###### EJEMPLO ######")
 
-numero_usuario = int(input("¿De que numero quieres la tablar?: "))
+numero_usuario = int(input("¿De que numero quieres la tabla?: "))
 
 if numero_usuario < 1:
     numero_usuario = 1
