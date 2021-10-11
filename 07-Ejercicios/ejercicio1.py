@@ -15,7 +15,7 @@ continente = "America"
 print(continente)
 print(type(continente)) 
 
-print("-----------------------------------")
+print("---------------- SOLUCION -------------------")
 
 pais = "Colombia"           #String
 continente = "America"      #String
