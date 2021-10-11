@@ -1,7 +1,7 @@
 """
 Ejercicio 3.
     - Escribir un programa que muestre los cuadrados 
-    (un numero multiplicado por si mismo) de los primeros numeros
+    (un numero multiplicado por si mismo) de los primeros numeros 60
     naturales. Usando el ciclo for y el ciclo while.
 """
 
