@@ -74,3 +74,19 @@ print("-----------------------------")
 
 for numero_tabla in range (1, 11):
     tabla(numero_tabla)
+
+# Ejemplo 4 
+print("-----------------------------")
+print("######### EJEMPLO 4 #########")
+print("-----------------------------")
+
+# Parametros opcionales
+
+def getEmpleado(nombre, CC = None):
+    print("EMPLEADO")
+    print(f"Nombre: {nombre}")
+
+    if CC != None:
+        print(f"CC: {CC}")
+
+getEmpleado("Juan David", "1010009805")
