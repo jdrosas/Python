@@ -150,4 +150,13 @@ def devuelveTodo(nombre, apellidos):
 
 print(devuelveTodo("Juan David", "Rosas Diaz"))
 
+# Ejemplo 8: Funciones Lambda
+print("-----------------------------")
+print("######### EJEMPLO 8 #########")
+print("-----------------------------")
+
+año = lambda year: f"El año es {year * 50}"
+
+print(año(2021))
+
 
