@@ -90,3 +90,17 @@ def getEmpleado(nombre, CC = None):
         print(f"CC: {CC}")
 
 getEmpleado("Juan David", "1010009805")
+
+# Ejemplo 5: Return o devolver datos
+print("-----------------------------")
+print("######### EJEMPLO 5 #########")
+print("-----------------------------")
+
+def saludame(nombre):
+    saludo = f"Hola, saludos {nombre}"
+
+    return saludo
+
+print(saludame("Juan David"))
+
+
