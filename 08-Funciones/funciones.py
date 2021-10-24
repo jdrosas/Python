@@ -10,7 +10,7 @@ nombre_de_mi_funcion(mi_parametro)
 """
 
 # Ejemplo 1
-print("-----------------------------")
+print("\n-----------------------------")
 print("######### EJEMPLO 1 #########")
 print("-----------------------------")
 # Definir funcion
@@ -26,7 +26,7 @@ def MuestraNombre():
 MuestraNombre()
 
 # Ejemplo 2: Parametros
-print("-----------------------------")
+print("\n-----------------------------")
 print("######### EJEMPLO 2 #########")
 print("-----------------------------")
 
@@ -50,7 +50,7 @@ MostrarTuNombre(nombre, edad)
 MostrarTuNombre("Pepito")"""
 
 # Ejemplo 3 
-print("-----------------------------")
+print("\n-----------------------------")
 print("######### EJEMPLO 3 #########")
 print("-----------------------------")
 
@@ -68,7 +68,7 @@ tabla(7)
 tabla(12)
 
 # Ejemplo 3.1
-print("-----------------------------")
+print("\n-----------------------------")
 print("######### EJEMPLO 3.1 #########")
 print("-----------------------------")
 
@@ -76,7 +76,7 @@ for numero_tabla in range (1, 11):
     tabla(numero_tabla)
 
 # Ejemplo 4 
-print("-----------------------------")
+print("\n-----------------------------")
 print("######### EJEMPLO 4 #########")
 print("-----------------------------")
 
@@ -92,7 +92,7 @@ def getEmpleado(nombre, CC = None):
 getEmpleado("Juan David", "1010009805")
 
 # Ejemplo 5: Return o devolver datos
-print("-----------------------------")
+print("\n-----------------------------")
 print("######### EJEMPLO 5 #########")
 print("-----------------------------")
 
@@ -104,7 +104,7 @@ def saludame(nombre):
 print(saludame("Juan David"))
 
 # Ejemplo 6
-print("-----------------------------")
+print("\n-----------------------------")
 print("######### EJEMPLO 6 #########")
 print("-----------------------------")
 
@@ -132,7 +132,7 @@ def calculadora(numero1, numero2, basicas = False):
 print(calculadora(5, 5))
 
 # Ejemplo 7
-print("-----------------------------")
+print("\n-----------------------------")
 print("######### EJEMPLO 7 #########")
 print("-----------------------------")
 
@@ -151,7 +151,7 @@ def devuelveTodo(nombre, apellidos):
 print(devuelveTodo("Juan David", "Rosas Diaz"))
 
 # Ejemplo 8: Funciones Lambda
-print("-----------------------------")
+print("\n-----------------------------")
 print("######### EJEMPLO 8 #########")
 print("-----------------------------")
 
