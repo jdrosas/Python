@@ -12,3 +12,29 @@ persona = {
 }
 
 print(persona["apellidos"])
+
+# Lista con diccionarios
+
+contactos = [
+    {
+        'nombre': 'Juan David',
+        'email': 'jrosas@jrosas.com'
+    },
+    {
+        'nombre': 'Elsa',
+        'email': 'ediaz@ediaz.com'
+    },
+    {
+        'nombre': 'John',
+        'email': 'jjrosas@jjrosas.com'
+    }
+]
+
+print(contactos[1]['nombre'])
+
+print("\nListado de contactos: ")
+
+for contacto in contactos:
+    print(f"Nombre del contacto: {contacto['nombre']}")
+    print(f"Email del contacto: {contacto['email']}")
+    print("------------------------------")
