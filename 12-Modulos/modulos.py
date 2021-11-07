@@ -34,3 +34,15 @@ fecha_personalizada = fecha_completa.strftime("%d/%m/%Y, %H:%M:%S")
 print("Mi fecha personalizada", fecha_personalizada)
 
 print(datetime.datetime.now().time())
+
+# Modulo de matematicas
+import math
+
+print("Raiz cuadrada de 10: ", math.sqrt(10))
+print("Numero pi: ", float(math.pi))
+print("Redondear: ", math.ceil(6.56987)) # ceil: Redondear al alza, floor: redondear a la baja
+
+# Modulo ramdom
+import random
+
+print("Numero aleatorio entre 15 y 67: ", random.randint(15, 67))
