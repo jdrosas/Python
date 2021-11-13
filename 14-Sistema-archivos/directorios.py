@@ -25,5 +25,5 @@ print("Contenido de mi carpeta:")
 contenido = os.listdir("./mi_carpeta")
 print(contenido)
 
-for fichero in contenido:
+for ficheros in contenido:
     print("Fichero: " + fichero)
