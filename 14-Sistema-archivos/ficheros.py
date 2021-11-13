@@ -33,8 +33,14 @@ for frase in lista:
     print("- "+frase.center(100))
 
 # Copiar
-ruta_original = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
+"""ruta_original = str(pathlib.Path().absolute()) + "/fichero_texto.txt"
 ruta_nueva = str(pathlib.Path().absolute()) + "/fichero_copiado.txt"
 ruta_alternativa = str(pathlib.Path().absolute()) + "/../07-Ejercicios/fichero_copiado_desde_14.txt"
 
-shutil.copyfile(ruta_original, ruta_alternativa)
+shutil.copyfile(ruta_original, ruta_alternativa)"""
+
+# Mover
+ruta_original = str(pathlib.Path().absolute()) + "/fichero_copiado.txt"
+ruta_nueva = str(pathlib.Path().absolute()) + "/fichero_copiado_nuevo.txt"
+
+shutil.move(ruta_original, ruta_nueva)
