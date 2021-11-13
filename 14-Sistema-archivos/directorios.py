@@ -26,4 +26,4 @@ contenido = os.listdir("./mi_carpeta")
 print(contenido)
 
 for ficheros in contenido:
-    print("Fichero: " + fichero)
+    print("Fichero: " + ficheros)
