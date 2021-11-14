@@ -40,6 +40,7 @@ print("########### Mostrar Longitud ###########")
 print(len(numeros))
 
 # Busqueda en la lista
+
 try:
     print("########### Busqueda en la lista ###########")
 
