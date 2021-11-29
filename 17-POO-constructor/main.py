@@ -10,7 +10,13 @@ print(carro1.getInfo())
 print(carro2.getInfo())
 print(carro3.getInfo())
 
+print("---------------------------------------------")
+
 # Detectar tipado
+
 if type(carro3) == Coche:
     print("Es un objeto correcto !!")
+else:
+    print("No es un objeto!!")
+
 
