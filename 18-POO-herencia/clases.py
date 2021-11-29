@@ -39,5 +39,28 @@ class Persona:
     def caminar(self):
         return "Estoy caminando"
 
-    def dromir(self):
+    def dormir(self):
         return "Estoy durmiendo"
+
+class Informatico(Persona):
+    """
+    lenguajes
+    experiencia
+    """
+
+    def __init__(self):
+        self.lenguajes = "HTML, CSS, JavaScript, PHP"
+        self.experiencia = 5 
+    
+    def getLenguajes(self):
+        return self.lenguajes
+
+    def aprender(self, lenguajes):
+        self.lenguajes = lenguajes
+        return self.lenguajes
+
+    def programas(self):
+        return "Estoy programando"
+
+    def repararPC(self):
+        return "He reparado tu equipo"
