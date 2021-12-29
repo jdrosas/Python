@@ -20,11 +20,27 @@ cursor.execute("CREATE TABLE IF NOT EXISTS productos("+
 conexion.commit()
 
 # Insertar datos
-cursor.execute("INSERT INTO productos VALUES (null, 'Primer producto', 'Descripcion de mi producto', 550)")
+"""cursor.execute("INSERT INTO productos VALUES (null, 'Primer producto', 'Descripcion de mi producto', 550)")
+conexion.commit()"""
+
+# Borrar registros
+# cursor.execute("DELETE FROM productos")
+
+# Insertar muchos registros de golpe
+productos = [
+    ("Ordenar portatil", "Buen PC", 700),
+    ("Telefono movil", "Buen Telefono", 140),
+    ("Placa base", "Buena Placa", 80),
+    ("Tablet 15", "Buena Tablet", 300), 
+]
+cursor.executemany("INSERT INTO productos VALUES (null,?,?,?)", productos)
 conexion.commit()
 
+# Update
+cursor.execute("UPDATE productos SET precio=678 WHERE precio = 80")
+
 # Listar datos
-cursor.execute("SELECT * FROM productos;")
+cursor.execute("SELECT * FROM productos WHERE precio >= 100;")
 productos = cursor.fetchall()
 
 for producto in productos:
