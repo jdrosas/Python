@@ -37,7 +37,7 @@ cursor.execute("SHOW TABLES")
 for table in cursor:
     print(table)
 
-#cursor.execute("INSERT INTO vehiculos VALUES (null, 'Opel', 'Astra', 18500)")
+# cursor.execute("INSERT INTO vehiculos VALUES (null, 'Opel', 'Astra', 18500)")
 
 coches = [
     ('Seat', 'Ibiza', 5000),
@@ -46,6 +46,20 @@ coches = [
     ('Mercedes', 'Clase C', 350000)
 ]
 
-cursor.executemany("INSERT INTO vehiculos VALUES (null, %s, %s, %s)", coches)
+# cursor.executemany("INSERT INTO vehiculos VALUES (null, %s, %s, %s)", coches)
 
 database.commit()
+
+cursor.execute("SELECT * FROM vehiculos WHERE precio <= 5000 AND marca = 'Seat' ")
+
+result = cursor.fetchall()
+
+print("------ TODOS MIS COCHES ------")
+for coche in result:
+    print(coche[1], coche[3])
+
+
+cursor.execute("SELECT * FROM vehiculos")
+
+coche = cursor.fetchone()
+print(coche)
