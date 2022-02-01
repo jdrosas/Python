@@ -11,7 +11,7 @@ database = mysql.connector.connect(
 # La conexion ha sido correcta?
 # print(database)
 
-cursor = database.cursor()
+cursor = database.cursor(buffered=True)
 """
 cursor.execute("CREATE DATABASE IF NOT EXISTS master_python")
 
@@ -63,3 +63,15 @@ cursor.execute("SELECT * FROM vehiculos")
 
 coche = cursor.fetchone()
 print(coche)
+
+cursor.execute("DELETE FROM vehiculos WHERE marca = 'Mercedes' ")
+database.commit()
+
+print(cursor.rowcount, "Borrados!!")
+
+# Actualizar
+
+cursor.execute("UPDATE vehiculos SET modelo = 'Leon' WHERE marca = 'Seat' ")
+database.commit()
+
+print(cursor.rowcount, "Actualizado!!")
