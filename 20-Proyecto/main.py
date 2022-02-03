@@ -7,6 +7,7 @@ Proyecto Python y MySql:
 - Crear nota, mostrar notas, borrarlas
 """
 
+from usuarios import acciones
 
 print("""
 -------------------------------------------------------------------------
@@ -18,16 +19,12 @@ Acciones disponibles:
 -------------------------------------------------------------------------
 """)
 
+hazEl = acciones.Acciones()
+
 accion = input("¿Que quieres hacer?: ")
 
 if accion == "Registro":
-    print("\nOk!! Vamos a registrarte en el sistema")
-    nombre = input("¿Cual es tu nombre?: ")
-    apellido = input("¿Cuales son tus apellidos?: ")
-    email = input("¿Introduce tu correo electronico?: ")
-    password = input("¿Introduce tu contraseña?: ")
+    hazEl.Registro()
 
 elif accion == "Login":
-    print("\nVale!! Identificate en el sistema")
-    email = input("¿Introduce tu correo electronico?: ")
-    password = input("¿Introduce tu contraseña?: ")
+    hazEl.Login()
