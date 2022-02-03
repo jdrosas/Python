@@ -6,3 +6,22 @@ Proyecto Python y MySql:
 - Si elegimos login, identifica al usuario y nos preguntará
 - Crear nota, mostrar notas, borrarlas
 """
+
+
+print("""
+-------------------------------------------------------------------------
+Acciones disponibles:
+
+    - Registro
+    - Login
+    
+-------------------------------------------------------------------------
+""")
+
+accion = input("¿Que quieres hacer?: ")
+
+if accion == "Registro":
+    print("Ok!! Vamos a registrarte en el sistema")
+
+elif accion == "Login":
+    print("Vale!! Identificate en el sistema")
